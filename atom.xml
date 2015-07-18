@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[Yo, Kuma!]]></title>
+  <subtitle><![CDATA[Life is short, be positive.]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://kumalee.github.io//"/>
+  <updated>2015-07-18T07:39:22.000Z</updated>
+  <id>http://kumalee.github.io//</id>
+  
+  <author>
+    <name><![CDATA[Kuma Lee]]></name>
+    <email><![CDATA[li.jun.kuma@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Gossip Renaissance]]></title>
+    <link href="http://kumalee.github.io/2015/07/18/Gossip-Renaissance/"/>
+    <id>http://kumalee.github.io/2015/07/18/Gossip-Renaissance/</id>
+    <published>2015-07-18T06:49:30.000Z</published>
+    <updated>2015-07-18T07:39:22.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Begin">Begin</h1><p>I bought 《重返文艺复兴－你不知道的天才之争》 two month ago.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Begin">Begin</h1><p>I bought 《重返文艺复兴－你不知道的天才之争》 two month ago.</p>
+]]>
+    </summary>
+    
+      <category term="art" scheme="http://kumalee.github.io/tags/art/"/>
+    
+      <category term="read" scheme="http://kumalee.github.io/tags/read/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Node Scaffolds]]></title>
+    <link href="http://kumalee.github.io/2015/07/18/Node-Scaffolds/"/>
+    <id>http://kumalee.github.io/2015/07/18/Node-Scaffolds/</id>
+    <published>2015-07-18T06:44:18.000Z</published>
+    <updated>2015-07-18T07:39:29.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
+    
+      <category term="node" scheme="http://kumalee.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[CSS Animation]]></title>
+    <link href="http://kumalee.github.io/2015/07/18/CSS-Animation/"/>
+    <id>http://kumalee.github.io/2015/07/18/CSS-Animation/</id>
+    <published>2015-07-18T06:41:38.000Z</published>
+    <updated>2015-07-18T07:39:35.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="css" scheme="http://kumalee.github.io/tags/css/"/>
+    
+      <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
+    
+  </entry>
+  
+</feed>
