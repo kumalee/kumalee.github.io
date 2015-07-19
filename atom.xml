@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Life is short, be positive.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://kumalee.github.io//"/>
-  <updated>2015-07-18T14:25:18.000Z</updated>
+  <updated>2015-07-19T10:43:57.000Z</updated>
   <id>http://kumalee.github.io//</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[React Native App Guide 1]]></title>
+    <link href="http://kumalee.github.io/2015/07/19/React-Native-App-Guide-1/"/>
+    <id>http://kumalee.github.io/2015/07/19/React-Native-App-Guide-1/</id>
+    <published>2015-07-19T08:14:32.000Z</published>
+    <updated>2015-07-19T10:43:57.000Z</updated>
+    <content type="html"><![CDATA[<p>Let’s start to learn and build an iOS App by React Native.</p>
+<h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="operator"><span class="keyword">install</span> <span class="comment">--HEAD watchman</span></span><br><span class="line">brew <span class="keyword">install</span> flow</span><br><span class="line">npm <span class="keyword">install</span> -g react-native-cli</span></span><br></pre></td></tr></table></figure>
+<p>  links:</p>
+<ol>
+<li><a href="https://facebook.github.io/watchman/docs/install.html" target="_blank" rel="external">watchman</a></li>
+<li><a href="http://flowtype.org/" target="_blank" rel="external">flow</a></li>
+<li><a href="https://facebook.github.io/react-native/docs/" target="_blank" rel="external">react-native docs</a></li>
+</ol>
+<h1 id="Quick_Start">Quick Start</h1>  <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">react-<span class="keyword">native</span> init projectName</span><br><span class="line">cd projectName</span><br><span class="line"><span class="keyword">open</span> projectName.xcodeproj</span><br><span class="line">watchman watch .</span><br></pre></td></tr></table></figure>
+<p>  Open <strong>index.ios.js</strong> in your text editor of choice and edit some lines.<br>  Hit <strong>cmd+R</strong> in your iOS simulator to reload the app and see your change!</p>
+<p>  OK. Let’s do some funny things next time. See you soon.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Let’s start to learn and build an iOS App by React Native.</p>
+<h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td cl]]>
+    </summary>
+    
+      <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
+    
+      <category term="react" scheme="http://kumalee.github.io/tags/react/"/>
+    
+      <category term="reactNative" scheme="http://kumalee.github.io/tags/reactNative/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Algorithm in Javascript]]></title>
