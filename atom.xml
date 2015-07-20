@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Life is short, be positive.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://kumalee.github.io//"/>
-  <updated>2015-07-19T12:45:40.000Z</updated>
+  <updated>2015-07-20T15:31:03.000Z</updated>
   <id>http://kumalee.github.io//</id>
   
   <author>
@@ -14,6 +14,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Config Files in Web Develop]]></title>
+    <link href="http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/"/>
+    <id>http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/</id>
+    <published>2015-07-20T10:42:07.000Z</published>
+    <updated>2015-07-20T15:31:03.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="How_many_config_files_do_we_need_in_web_develop?">How many config files do we need in web develop?</h1><ol>
+<li>.editorconfig</li>
+<li>.gitignore</li>
+<li>.gitconfig</li>
+<li>package.json</li>
+<li>gulp.js</li>
+</ol>
+<h1 id="-editorconfig">.editorconfig</h1><ol>
+<li><p>What is EditorConfig?</p>
+<blockquote>
+<p>EditorConfig helps developers define and maintain consistent coding styles  between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles.  EditorConfig files are easily readable and they work nicely with version control  systems.</p>
+</blockquote>
+<p>简单的说呢，.editorconfig 就是用来定义和保持不同开发者、IDE、平台之间的代码风格的。<br>接下来看看各个 IDE 对此配置文件的支持情况。</p>
+<ol>
+<li>原生支持<ol>
+<li><a href="http://editorconfig.org/logos/bbedit.png" target="_blank" rel="external">BBEdit</a></li>
+<li><a href="http://editorconfig.org/logos/coda.png" target="_blank" rel="external">Coda</a></li>
+<li><a href="http://editorconfig.org/logos/clion.png" target="_blank" rel="external">CLion</a></li>
+<li><a href="http://editorconfig.org/logos/github.png" target="_blank" rel="external">GitHub</a></li>
+<li><a href="http://editorconfig.org/logos/intellijIDEA.png" target="_blank" rel="external">IntelliJIDEA</a></li>
+<li><a href="http://editorconfig.org/logos/rubyMine.png" target="_blank" rel="external">RubyMine</a></li>
+<li><a href="http://editorconfig.org/logos/sourcelair.png" target="_blank" rel="external">SourceLari</a></li>
+<li><a href="http://editorconfig.org/logos/webStorm.png" target="_blank" rel="external">WebStorm</a></li>
+</ol>
+</li>
+<li>需要安装插件才能支持<ol>
+<li><a href="http://editorconfig.org/logos/appCode.png" target="_blank" rel="external">AppCode</a></li>
+<li><a href="http://editorconfig.org/logos/atom.png" target="_blank" rel="external">Atom</a></li>
+<li><a href="http://editorconfig.org/logos/brackets.png" target="_blank" rel="external">Brackets</a></li>
+<li><a href="http://editorconfig.org/logos/codeblocks.png" target="_blank" rel="external">Code::Blocks</a></li>
+<li><a href="http://editorconfig.org/logos/eclipse.png" target="_blank" rel="external">Eclipse</a></li>
+<li><a href="http://editorconfig.org/logos/emacs.png" target="_blank" rel="external">Emacs</a></li>
+<li><a href="http://editorconfig.org/logos/geany.png" target="_blank" rel="external">Geany</a></li>
+<li><a href="http://editorconfig.org/logos/gedit.png" target="_blank" rel="external">gedit</a></li>
+<li><a href="http://editorconfig.org/logos/jedit.png" target="_blank" rel="external">jEdit</a></li>
+<li><a href="http://editorconfig.org/logos/komodo.png" target="_blank" rel="external">Komodo</a></li>
+<li><a href="http://editorconfig.org/logos/NetBeans.png" target="_blank" rel="external">NetBeans</a></li>
+<li><a href="http://editorconfig.org/logos/notepad.png" target="_blank" rel="external">NotePad++</a></li>
+<li><a href="http://editorconfig.org/logos/phpStorm.png" target="_blank" rel="external">PhpStorm</a></li>
+<li><a href="http://editorconfig.org/logos/pyCharm.png" target="_blank" rel="external">PyCharm</a></li>
+<li><a href="http://editorconfig.org/logos/sublimetext.png" target="_blank" rel="external">Sublime Text</a></li>
+<li><a href="http://editorconfig.org/logos/textmate.png" target="_blank" rel="external">textmate</a></li>
+<li><a href="http://editorconfig.org/logos/vim.png" target="_blank" rel="external">Vim</a></li>
+<li><a href="http://editorconfig.org/logos/visualstudio.png" target="_blank" rel="external">Visual Studio</a></li>
+<li><a href="http://editorconfig.org/logos/xcode.png" target="_blank" rel="external">Xcode</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>How to write .editorconfig?<br> Let’s see an example file setting end-of-line and indentation styles for Python and JavaScript files.</p>
+<p> 范例文件来自 <a href="http://editorconfig.org/" target="_blank" rel="external">editorconfig.org</a></p>
+ <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># top-most EditorConfig file</span></span><br><span class="line"><span class="constant">root</span> = true</span><br><span class="line"></span><br><span class="line"><span class="comment"># Unix-style newlines with a newline ending every file</span></span><br><span class="line">[*]</span><br><span class="line"><span class="constant">end_of_line</span> = lf</span><br><span class="line"><span class="constant">insert_final_newline</span> = true</span><br><span class="line"></span><br><span class="line"><span class="comment"># Matches multiple files with brace expansion notation</span></span><br><span class="line"><span class="comment"># Set default charset</span></span><br><span class="line">[*.&#123;js,py&#125;]</span><br><span class="line"><span class="constant">charset</span> = utf-8</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4 space indentation</span></span><br><span class="line">[*.py]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 4</span><br><span class="line"></span><br><span class="line"><span class="comment"># Tab indentation (no size specified)</span></span><br><span class="line">[Makefile]</span><br><span class="line"><span class="constant">indent_style</span> = tab</span><br><span class="line"></span><br><span class="line"><span class="comment"># Indentation override for all JS under lib directory</span></span><br><span class="line">[lib/**.js]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># Matches the exact files either package.json or .travis.yml</span></span><br><span class="line">[&#123;package.json,.travis.yml&#125;]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 2</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="Next">Next</h1><p>  Want to know .gitignore? See the next!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="How_many_config_files_do_we_need_in_web_develop?">How many config files do we need in web develop?</h1><ol>
+<li>.editorconfig</li>
+<]]>
+    </summary>
+    
+      <category term="config" scheme="http://kumalee.github.io/tags/config/"/>
+    
+      <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[React Native App Guide 2]]></title>
