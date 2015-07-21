@@ -237,71 +237,6 @@
 <p>EditorConfig helps developers define and maintain consistent coding styles  between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles.  EditorConfig files are easily readable and they work nicely with version control  systems.</p>
 </blockquote>
 <p>简单的说呢，.editorconfig 就是用来定义和保持不同开发者、IDE、平台之间的代码风格的。<br>接下来看看各个 IDE 对此配置文件的支持情况。</p>
-<ol>
-<li>原生支持<ol>
-<li><a href="http://editorconfig.org/logos/bbedit.png" target="_blank" rel="external">BBEdit</a></li>
-<li><a href="http://editorconfig.org/logos/coda.png" target="_blank" rel="external">Coda</a></li>
-<li><a href="http://editorconfig.org/logos/clion.png" target="_blank" rel="external">CLion</a></li>
-<li><a href="http://editorconfig.org/logos/github.png" target="_blank" rel="external">GitHub</a></li>
-<li><a href="http://editorconfig.org/logos/intellijIDEA.png" target="_blank" rel="external">IntelliJIDEA</a></li>
-<li><a href="http://editorconfig.org/logos/rubyMine.png" target="_blank" rel="external">RubyMine</a></li>
-<li><a href="http://editorconfig.org/logos/sourcelair.png" target="_blank" rel="external">SourceLari</a></li>
-<li><a href="http://editorconfig.org/logos/webStorm.png" target="_blank" rel="external">WebStorm</a></li>
-</ol>
-</li>
-<li>需要安装插件才能支持<ol>
-<li><a href="http://editorconfig.org/logos/appCode.png" target="_blank" rel="external">AppCode</a></li>
-<li><a href="http://editorconfig.org/logos/atom.png" target="_blank" rel="external">Atom</a></li>
-<li><a href="http://editorconfig.org/logos/brackets.png" target="_blank" rel="external">Brackets</a></li>
-<li><a href="http://editorconfig.org/logos/codeblocks.png" target="_blank" rel="external">Code::Blocks</a></li>
-<li><a href="http://editorconfig.org/logos/eclipse.png" target="_blank" rel="external">Eclipse</a></li>
-<li><a href="http://editorconfig.org/logos/emacs.png" target="_blank" rel="external">Emacs</a></li>
-<li><a href="http://editorconfig.org/logos/geany.png" target="_blank" rel="external">Geany</a></li>
-<li><a href="http://editorconfig.org/logos/gedit.png" target="_blank" rel="external">gedit</a></li>
-<li><a href="http://editorconfig.org/logos/jedit.png" target="_blank" rel="external">jEdit</a></li>
-<li><a href="http://editorconfig.org/logos/komodo.png" target="_blank" rel="external">Komodo</a></li>
-<li><a href="http://editorconfig.org/logos/NetBeans.png" target="_blank" rel="external">NetBeans</a></li>
-<li><a href="http://editorconfig.org/logos/notepad.png" target="_blank" rel="external">NotePad++</a></li>
-<li><a href="http://editorconfig.org/logos/phpStorm.png" target="_blank" rel="external">PhpStorm</a></li>
-<li><a href="http://editorconfig.org/logos/pyCharm.png" target="_blank" rel="external">PyCharm</a></li>
-<li><a href="http://editorconfig.org/logos/sublimetext.png" target="_blank" rel="external">Sublime Text</a></li>
-<li><a href="http://editorconfig.org/logos/textmate.png" target="_blank" rel="external">textmate</a></li>
-<li><a href="http://editorconfig.org/logos/vim.png" target="_blank" rel="external">Vim</a></li>
-<li><a href="http://editorconfig.org/logos/visualstudio.png" target="_blank" rel="external">Visual Studio</a></li>
-<li><a href="http://editorconfig.org/logos/xcode.png" target="_blank" rel="external">Xcode</a></li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>How to write .editorconfig?<br> Let’s see an example file setting end-of-line and indentation styles for Python and JavaScript files.</p>
-<p> 范例文件来自 <a href="http://editorconfig.org/" target="_blank" rel="external">editorconfig.org</a></p>
- <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># top-most EditorConfig file</span></span><br><span class="line"><span class="constant">root</span> = true</span><br><span class="line"></span><br><span class="line"><span class="comment"># Unix-style newlines with a newline ending every file</span></span><br><span class="line">[*]</span><br><span class="line"><span class="constant">end_of_line</span> = lf</span><br><span class="line"><span class="constant">insert_final_newline</span> = true</span><br><span class="line"></span><br><span class="line"><span class="comment"># Matches multiple files with brace expansion notation</span></span><br><span class="line"><span class="comment"># Set default charset</span></span><br><span class="line">[*.&#123;js,py&#125;]</span><br><span class="line"><span class="constant">charset</span> = utf-8</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4 space indentation</span></span><br><span class="line">[*.py]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 4</span><br><span class="line"></span><br><span class="line"><span class="comment"># Tab indentation (no size specified)</span></span><br><span class="line">[Makefile]</span><br><span class="line"><span class="constant">indent_style</span> = tab</span><br><span class="line"></span><br><span class="line"><span class="comment"># Indentation override for all JS under lib directory</span></span><br><span class="line">[lib/**.js]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># Matches the exact files either package.json or .travis.yml</span></span><br><span class="line">[&#123;package.json,.travis.yml&#125;]</span><br><span class="line"><span class="constant">indent_style</span> = space</span><br><span class="line"><span class="constant">indent_size</span> = 2</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="-gitconfig">.gitconfig</h1><p>  Sorry, this part is not ready.</p>
-<h1 id="-gitignore">.gitignore</h1><ol>
-<li>What is .gitignore?<blockquote>
-<p>If you create a file in your repository named .gitignore, Git uses it to determine which files and directories to ignore, before you make a commit. A .gitignore file should be committed into your repository, in order to share the ignore rules with any other users that clone the repository. See more <a href="https://help.github.com/articles/ignoring-files/" target="_blank" rel="external">https://help.github.com/articles/ignoring-files/</a><br>简单来说呢，.gitignore 文件就是用来定义哪些文件/目录不需要被提交到项目的 Git 库中，为了<br>和项目的协作开发者分享这个规则，应该把 .gitignore 文件本身添加到项目的 Git 库中去。</p>
-</blockquote>
-</li>
-<li><p>Make .gitignore easy!<br>Please visit <a href="https://www.gitignore.io/" target="_blank" rel="external">https://www.gitignore.io/</a>.<br>It is hosting 208 Operating System, IDE, and Programming Language .gitignore templates.<br>You can also use command line to get the templates you want.<br><strong>Setup</strong><br>1.Add the code blow into your .gitconfig file, in [alias] block</p>
- <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="atom">alias</span>]</span><br><span class="line">  ...</span><br><span class="line">  <span class="atom">ignore</span> = <span class="string">"!gi() &#123; curl -L -s https://www.gitignore.io/api/$@ ;&#125;; gi"</span></span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<p> Or you can use type the command in bash to add the alias.</p>
- <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span>.ignore <span class="string">'!gi() &#123; curl -L -s https://www.gitignore.io/api/$@ ;&#125;; gi'</span></span><br></pre></td></tr></table></figure>
-<p>2.Add command ‘gi’ to your bash.<br> OSX</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo <span class="string">"function gi() &#123; curl -L -s https://www.gitignore.io/api/\$@ ;&#125;"</span> <span class="prompt">&gt;&gt; </span>~<span class="regexp">/.bash_profile &amp;&amp; source ~/</span>.bash_profile</span><br></pre></td></tr></table></figure>
-<h2 id="More_system_please_visit:_https://www-gitignore-io/docs#install-command-line"> More system please visit: <a href="https://www.gitignore.io/docs#install-command-line" target="_blank" rel="external">https://www.gitignore.io/docs#install-command-line</a></h2><p><strong>Use the command line</strong> <strong>Note:</strong> Use ‘gig’ if you’re in Windows<br>1.list all the template</p>
- <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gi <span class="type">list</span></span><br></pre></td></tr></table></figure>
-<p>2.output the content of template.</p>
- <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">gi</span> node, rails</span><br></pre></td></tr></table></figure>
-<p>3.Append Operating System and IDE settings to global .gitignore.</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gi node, rails <span class="prompt">&gt;&gt; </span>~<span class="regexp">/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>4.Appending Programming Langauge settings to your projects .gitignore.</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gi node, rails <span class="prompt">&gt;&gt; </span>.gitignore</span><br></pre></td></tr></table></figure>
-<p><strong>Fork it from github</strong><br> If you want more infomation. <a href="https://github.com/joeblau/gitignore.io" target="_blank" rel="external">Just Fork the Repo</a></p>
-</li>
-</ol>
-
       
     </div>
     
@@ -314,6 +249,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/20/Config-Files-in-Web-Develop/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -359,14 +298,10 @@
 <h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="operator"><span class="keyword">install</span> <span class="comment">--HEAD watchman</span></span><br><span class="line">brew <span class="keyword">install</span> flow</span><br><span class="line">npm <span class="keyword">install</span> -g react-native-cli</span></span><br></pre></td></tr></table></figure>
 <p>  links:</p>
 <ol>
-<li><a href="https://facebook.github.io/watchman/docs/install.html" target="_blank" rel="external">watchman</a></li>
-<li><a href="http://flowtype.org/" target="_blank" rel="external">flow</a></li>
-<li><a href="https://facebook.github.io/react-native/docs/" target="_blank" rel="external">react-native docs</a></li>
+<li><a href="https://facebook.github.io/watchman/docs/install.html">watchman</a></li>
+<li><a href="http://flowtype.org/">flow</a></li>
+<li><a href="https://facebook.github.io/react-native/docs/">react-native docs</a></li>
 </ol>
-<h1 id="Quick_Start">Quick Start</h1>  <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">react-<span class="keyword">native</span> init projectName</span><br><span class="line">cd projectName</span><br><span class="line"><span class="keyword">open</span> projectName.xcodeproj</span><br><span class="line">watchman watch .</span><br></pre></td></tr></table></figure>
-<p>  Open <strong>index.ios.js</strong> in your text editor of choice and edit some lines.<br>  Hit <strong>cmd+R</strong> in your iOS simulator to reload the app and see your change!</p>
-<p>  OK. Let’s do some funny things next time. See you soon.</p>
-
       
     </div>
     
@@ -379,6 +314,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/19/React-Native-App-Guide-1/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -446,16 +385,7 @@
 </ol>
 </li>
 </ol>
-<p><a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external">Sort Animation in Javascript by NoraHiko</a></p>
-<h2 id="Quick_Sort_(sometimes_called_partition-exchange_sort)">Quick Sort (sometimes called partition-exchange sort)</h2><p>by Charles Antony Richard Hoare (commonly known as Tony Hoare or C. A. R. Hoare)（1934—）developed in 1959/1960.<br>ACM Turing Award (1980).</p>
-<ol>
-<li>Pick an element, called a pivot, from the array.<br>选择一个基准</li>
-<li>Reorder the array so that all elements with values less than the pivot come  before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.<br>所有小于基准的元素，移到基准的左边;所有大于基准的元素，移到基准的右边。</li>
-<li>Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.<br>对基准左边和右边的两个子集，递归第一步和第二步，直到所有子集只剩下一个元素为止。</li>
-</ol>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">quickSort</span> = function(arr) &#123;</span><br><span class="line">　　<span class="keyword">if</span> (arr.length &lt;= <span class="number">1</span>) &#123; <span class="keyword">return</span> arr; &#125;</span><br><span class="line">　　<span class="keyword">var</span> pivotIndex = <span class="type">Math</span>.floor(arr.length / <span class="number">2</span>);</span><br><span class="line">　　<span class="keyword">var</span> pivot = arr.splice(pivotIndex, <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">　　<span class="keyword">var</span> <span class="keyword">left</span> = [];</span><br><span class="line">　　<span class="keyword">var</span> <span class="keyword">right</span> = [];</span><br><span class="line">　　<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">　　　　<span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</span><br><span class="line">　　　　　　<span class="keyword">left</span>.push(arr[i]);</span><br><span class="line">　　　　&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">　　　　　　<span class="keyword">right</span>.push(arr[i]);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="keyword">return</span> <span class="built_in">quickSort</span>(<span class="keyword">left</span>).concat([pivot], <span class="built_in">quickSort</span>(<span class="keyword">right</span>));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="References">References</h3><p><a href="https://en.wikipedia.org/wiki/Sorting_algorithm" target="_blank" rel="external">Algorithm https://en.wikipedia.org/wiki/Sorting_algorithm</a></p>
-
+<p><a href="http://jsdo.it/norahiko/oxIy/fullscreen">Sort Animation in Javascript by NoraHiko</a></p>
       
     </div>
     
@@ -468,6 +398,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/18/Algorithm-in-Javascript/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -569,440 +503,6 @@
 <blockquote>
 <p><strong>Recalculate Style</strong> -&gt; <strong>Layout</strong> -&gt; <strong>Paint Setup and Paint</strong> -&gt; <strong>Composite Layers</strong><br>计算元素的样式（重新计算样式）-&gt; 生成每个元素的几何形状和位置（布局）-&gt; 绘制图层中的每个像素（初始化绘图并且进行绘图）-&gt; 并且将图层绘制到屏幕上（图层的合成）。</p>
 </blockquote>
-<p>通过DevTools从文档对象模型到像素级别的观察:</p>
-<blockquote>
-<p>The higher up you start on the timeline waterfall the more work the browser has to do to get pixels on to the screen. Chrome DevTools 框架模式。 瀑布流越高，说明浏览器做的越多。</p>
-</blockquote>
-<p>Browsers can animate four things cheaply</p>
-<ol>
-<li>position -&gt; transform: translate(npx, npx);</li>
-<li>scale -&gt; transform: scale(n);</li>
-<li>rotation -&gt; transform: rotate(ndeg);</li>
-<li>opacity -&gt; opcaity: 0…1;</li>
-</ol>
-<p>Chrome, Firefox, Safari and Opera all hardware accelerate transforms and opacity.</p>
-<p>合成属性的动画</p>
-<p>有一个 CSS 属性，你可能认为它会引起重绘，但有时候并不会。就是：opacity. 当 GPU 在合成元素的纹理结构的时候，会以一个较低的 alpha 值去处理 opacity 的改变。它的条件是，元素必须是图层中唯一的一个元素。如果它和其它的元素组合在一起，那么对 opacity 的改变也会让 GPU（错误地）淡化其它的元素。</p>
-<p>在 Blink 和 WebKit 内核的浏览器中，对于在 CSS 的 transition 或者 animation 中有 opacity 的改变的元素，将会为其创建一个图层。但也有很多开发者使用 translateZ(0) 或者 translate3d(0,0,0) 来人为地强制性地创建一个图层。 强制创建一个图层可以确保图层被绘制完毕并且可以在动画开始的时候，马上进入就绪状态。（创建并且绘制一个图层是一个不会有人反对的操作，并且它会延迟你的动画的开始），而且由于反锯齿的改变，动画中将不会出现唐突的变化。然而，需要有节制地增加图层；如果过分的增加图层，那么将会导致闪烁。</p>
-<p>Three ways that we can make animation for html</p>
-<ol>
-<li>css animation</li>
-<li>css transition</li>
-<li>javascript requireAnimationFrame</li>
-</ol>
-<p>Developers often have to decide if they will animate with JavaScript (imperative 命令式) or CSS (declarative 声明式). There are pros and cons to each, so let’s take a look:</p>
-<p>命令式</p>
-<p>命令式动画主要的优点同时也是它主要的缺点的是：它在浏览器主进程的 JavaScript 中运行。主进程已经忙于运行其他的 JavaScript，样式的计算，布局还有绘制。所以进程内存在这资源竞争。这实质上增加了掉帧的风险，可能这一帧是你认为最重要的帧。</p>
-<p>JavaScript 中的动画可以为你提供更多的控制：开始，暂停，回放，中断和取消等细节。有一些特效如 parallax 的滚动只能用 JavaScript 来完成。</p>
-<p>声明式</p>
-<p>作为替代的方案，你可以用 CSS 来实现你的渐变和动画。最主要的好处就是，浏览器会对动画进行优化。如果有需要，它会创建图层。并且可以在主进程之外完成一些操作。它最主要的缺点就是 CSS 动画相对于 Javascript 动画而言，缺乏表现力。并且很难有意义地组织动画，这意味着创造动画会带来较高的复杂度和错误率。</p>
-<p>使用 Chrome 的 DevTools 调试&amp;优化：<br>Timeline 调试</p>
-<ol>
-<li>查看每帧的时间</li>
-<li>查看内存 Memory</li>
-<li>查看 CompositeLayer</li>
-</ol>
-<p>优化方法<br>CSS</p>
-<ol>
-<li>在做每个动画时，要确保每次改变CSS时，所影响的元素都是我们需要改变的，不要改变和动画无关的元素。</li>
-<li><p>避免Layout Thrashing</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">for</span> (var i = <span class="number">0</span><span class="comment">; i &lt; elements.length; i++) &#123;</span></span><br><span class="line">  var <span class="keyword">blockWidth </span>= <span class="keyword">baseElement.offsetWidth;</span><br><span class="line"></span>  elements[i].style.width = <span class="keyword">blockWidth;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-<p>这是一个性能很低的例子。<br>这个例子修改起来非常简单，只要把读Layout的事情放在循环外就好了。</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">var</span> <span class="keyword">blockWidth </span>= <span class="keyword">baseElement.offsetWidth;</span><br><span class="line"></span><span class="label">for</span> (var i = <span class="number">0</span><span class="comment">; i &lt; elements.length; i++) &#123;</span></span><br><span class="line">  elements[i].style.width = <span class="keyword">blockWidth;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更快的CSS Matching</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span><span class="class">.box</span>:<span class="function"><span class="title">not</span><span class="params">(:empty)</span></span>:last-of-type <span class="class">.title</span></span><br><span class="line"><span class="class">.box--last</span> &gt; <span class="class">.title-container</span> &gt; <span class="class">.title</span></span><br><span class="line"><span class="class">.box</span>:<span class="function"><span class="title">nth-last-child</span><span class="params">(-n+<span class="number">1</span>)</span></span> .title</span><br></pre></td></tr></table></figure>
-<p>第二种写法性能是最好的, 不过好的设计应该是不断回收在屏幕外的 Dom。</p>
-</li>
-<li><p>把适量的元素变成 layer<br>如何让一个元素成为一个Layer呢？目前有几种Hack的方式：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.layer</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transfrom</span>:<span class="value"> <span class="function">translate3d</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.layer</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transfrom</span>:<span class="value"> <span class="function">translateZ</span>(<span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>Chrome提供一个更好的方式，使用will-change，和上面不同，will-change不会直接把元素变成Layer，而是给浏览器一个提示，这可以让浏览器自己决定是否成为Layer，推荐这种方式：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.layer</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">will-change</span>:<span class="value"> transform</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>Javascript</p>
-<ol>
-<li>查看耗时较长的 Javascript，必要时使用 WebWorker</li>
-<li>低优处理 Micro Optimization</li>
-</ol>
-<p><img src="http://77fhp9.com1.z0.glb.clouddn.com/css%20animate.jpg" alt=""></p>
-<table>
-<thead>
-<tr>
-<th>CSS Property</th>
-<th>% of webpages</th>
-<th>invasiveness</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>width</td>
-<td>93.57%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>height</td>
-<td>91.65%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>padding</td>
-<td>91.14%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>margin</td>
-<td>91.00%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>display</td>
-<td>91.00%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border-width</td>
-<td>90.76%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border</td>
-<td>90.28%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>top</td>
-<td>89.88%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>position</td>
-<td>89.83%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>color</td>
-<td>87.46%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>border-style</td>
-<td>87.43%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>font-size</td>
-<td>87.39%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>float</td>
-<td>86.12%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>background-color</td>
-<td>86.04%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border-color</td>
-<td>85.90%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>text-align</td>
-<td>85.73%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>opacity</td>
-<td>85.53%</td>
-<td>composite</td>
-</tr>
-<tr>
-<td>overflow-y</td>
-<td>84.25%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>font-weight</td>
-<td>84.03%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>overflow</td>
-<td>83.96%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>left</td>
-<td>83.35%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>visibility</td>
-<td>82.07%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>font-family</td>
-<td>81.98%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>background</td>
-<td>81.66%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>text-decoration</td>
-<td>80.78%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>margin-bottom</td>
-<td>80.52%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>cursor</td>
-<td>79.66%</td>
-<td>composite</td>
-</tr>
-<tr>
-<td>padding-bottom</td>
-<td>79.21%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>line-height</td>
-<td>78.58%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>z-index</td>
-<td>77.44%</td>
-<td>composite</td>
-</tr>
-<tr>
-<td>background-image</td>
-<td>77.13%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>vertical-align</td>
-<td>75.90%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>right</td>
-<td>75.50%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>background-position</td>
-<td>73.62%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>background-repeat</td>
-<td>72.46%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>clear</td>
-<td>71.90%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>white-space</td>
-<td>71.69%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>list-style-type</td>
-<td>68.41%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>bottom</td>
-<td>68.13%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>outline-color</td>
-<td>66.49%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>outline</td>
-<td>66.42%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>outline-style</td>
-<td>66.40%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>zoom</td>
-<td>66.25%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>font-style</td>
-<td>65.78%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>font</td>
-<td>64.69%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>min-height</td>
-<td>64.64%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border-radius</td>
-<td>64.23%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>max-width</td>
-<td>63.49%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>min-width</td>
-<td>63.42%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>webkit-border-radius</td>
-<td>63.09%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>webkit-box-shadow</td>
-<td>62.69%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>list-style</td>
-<td>62.68%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>content</td>
-<td>62.34%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border-collapse</td>
-<td>62.17%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>text-shadow</td>
-<td>60.41%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>box-sizing</td>
-<td>59.54%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>text-indent</td>
-<td>57.39%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>outline-width</td>
-<td>56.87%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>box-shadow</td>
-<td>56.81%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>webkit-border-horizontal-spacing</td>
-<td>55.87%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>border-spacing</td>
-<td>55.86%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>max-height</td>
-<td>55.28%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>text-transform</td>
-<td>53.16%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>text-overflow</td>
-<td>53.04%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>word-wrap</td>
-<td>49.09%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>webkit-user-select</td>
-<td>48.65%</td>
-<td>composite</td>
-</tr>
-<tr>
-<td>background-size</td>
-<td>47.67%</td>
-<td>paint</td>
-</tr>
-<tr>
-<td>webkit-transition</td>
-<td>47.10%</td>
-<td>?</td>
-</tr>
-<tr>
-<td>letter-spacing</td>
-<td>47.01%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>webkit-appearance</td>
-<td>44.55%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>direction</td>
-<td>43.99%</td>
-<td>layout</td>
-</tr>
-<tr>
-<td>webkit-transform</td>
-<td>42.66%</td>
-<td>composite</td>
-</tr>
-</tbody>
-</table>
-<h3 id="References">References</h3><p>Source <a href="http://goo.gl/lPVJY6" target="_blank" rel="external">http://goo.gl/lPVJY6</a></p>
-<p><a href="https://www.javascripting.com/animation/?sort=rating" target="_blank" rel="external">Amazing Animation Projects</a></p>
-<p><a href="http://weibo.com/p/1001603865643593165786" target="_blank" rel="external">H5动画60fps之路</a></p>
-<p><a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank" rel="external">High Performance Animations</a></p>
-<p><a href="http://www.html5rocks.com/en/tutorials/speed/layers/" target="_blank" rel="external">Accelerated Rendering in Chrome</a></p>
-
       
     </div>
     
@@ -1015,6 +515,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/18/CSS-Animation/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

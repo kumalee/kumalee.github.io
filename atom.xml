@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Life is short, be positive.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://kumalee.github.io//"/>
-  <updated>2015-07-21T04:21:27.000Z</updated>
+  <updated>2015-07-21T04:36:52.000Z</updated>
   <id>http://kumalee.github.io//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/"/>
     <id>http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/</id>
     <published>2015-07-20T10:42:07.000Z</published>
-    <updated>2015-07-21T04:21:27.000Z</updated>
+    <updated>2015-07-21T04:36:52.000Z</updated>
     <content type="html"><![CDATA[<h1 id="How_many_config_files_do_we_need_in_web_develop?">How many config files do we need in web develop?</h1><ol>
 <li>.editorconfig</li>
 <li>.gitignore</li>
@@ -34,6 +34,7 @@
 <p>EditorConfig helps developers define and maintain consistent coding styles  between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles.  EditorConfig files are easily readable and they work nicely with version control  systems.</p>
 </blockquote>
 <p>简单的说呢，.editorconfig 就是用来定义和保持不同开发者、IDE、平台之间的代码风格的。<br>接下来看看各个 IDE 对此配置文件的支持情况。</p>
+<a id="more"></a>
 <ol>
 <li>原生支持<ol>
 <li><a href="http://editorconfig.org/logos/bbedit.png" target="_blank" rel="external">BBEdit</a></li>
@@ -102,7 +103,18 @@
     <summary type="html">
     <![CDATA[<h1 id="How_many_config_files_do_we_need_in_web_develop?">How many config files do we need in web develop?</h1><ol>
 <li>.editorconfig</li>
-<]]>
+<li>.gitignore</li>
+<li>.gitconfig</li>
+<li>package.json</li>
+<li>gulp.js</li>
+</ol>
+<h1 id="-editorconfig">.editorconfig</h1><ol>
+<li><p>What is EditorConfig?</p>
+<blockquote>
+<p>EditorConfig helps developers define and maintain consistent coding styles  between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles.  EditorConfig files are easily readable and they work nicely with version control  systems.</p>
+</blockquote>
+<p>简单的说呢，.editorconfig 就是用来定义和保持不同开发者、IDE、平台之间的代码风格的。<br>接下来看看各个 IDE 对此配置文件的支持情况。</p>]]>
+    
     </summary>
     
       <category term="config" scheme="http://kumalee.github.io/tags/config/"/>
@@ -116,11 +128,12 @@
     <link href="http://kumalee.github.io/2015/07/19/React-Native-App-Guide-2/"/>
     <id>http://kumalee.github.io/2015/07/19/React-Native-App-Guide-2/</id>
     <published>2015-07-19T11:34:56.000Z</published>
-    <updated>2015-07-19T12:45:40.000Z</updated>
+    <updated>2015-07-21T04:38:32.000Z</updated>
     <content type="html"><![CDATA[<p>Let’s begin with a video list App width TabBar.</p>
 <h1 id="Step_1">Step 1</h1><blockquote>
 <p>create two other js file in the same directory with index.ios.js<br>all.js, search.js</p>
 </blockquote>
+<a id="more"></a>
 <h1 id="Step_2">Step 2</h1><blockquote>
 <p>write the code of featured.js</p>
 </blockquote>
@@ -141,7 +154,9 @@
     <summary type="html">
     <![CDATA[<p>Let’s begin with a video list App width TabBar.</p>
 <h1 id="Step_1">Step 1</h1><blockquote>
-<p>create two other js file in the same direc]]>
+<p>create two other js file in the same directory with index.ios.js<br>all.js, search.js</p>
+</blockquote>]]>
+    
     </summary>
     
   </entry>
@@ -151,7 +166,7 @@
     <link href="http://kumalee.github.io/2015/07/19/React-Native-App-Guide-1/"/>
     <id>http://kumalee.github.io/2015/07/19/React-Native-App-Guide-1/</id>
     <published>2015-07-19T08:14:32.000Z</published>
-    <updated>2015-07-19T10:43:57.000Z</updated>
+    <updated>2015-07-21T04:38:20.000Z</updated>
     <content type="html"><![CDATA[<p>Let’s start to learn and build an iOS App by React Native.</p>
 <h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="operator"><span class="keyword">install</span> <span class="comment">--HEAD watchman</span></span><br><span class="line">brew <span class="keyword">install</span> flow</span><br><span class="line">npm <span class="keyword">install</span> -g react-native-cli</span></span><br></pre></td></tr></table></figure>
 <p>  links:</p>
@@ -160,13 +175,21 @@
 <li><a href="http://flowtype.org/" target="_blank" rel="external">flow</a></li>
 <li><a href="https://facebook.github.io/react-native/docs/" target="_blank" rel="external">react-native docs</a></li>
 </ol>
+<a id="more"></a>
 <h1 id="Quick_Start">Quick Start</h1>  <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">react-<span class="keyword">native</span> init projectName</span><br><span class="line">cd projectName</span><br><span class="line"><span class="keyword">open</span> projectName.xcodeproj</span><br><span class="line">watchman watch .</span><br></pre></td></tr></table></figure>
 <p>  Open <strong>index.ios.js</strong> in your text editor of choice and edit some lines.<br>  Hit <strong>cmd+R</strong> in your iOS simulator to reload the app and see your change!</p>
 <p>  OK. Let’s do some funny things next time. See you soon.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Let’s start to learn and build an iOS App by React Native.</p>
-<h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td cl]]>
+<h1 id="Setup">Setup</h1>  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="operator"><span class="keyword">install</span> <span class="comment">--HEAD watchman</span></span><br><span class="line">brew <span class="keyword">install</span> flow</span><br><span class="line">npm <span class="keyword">install</span> -g react-native-cli</span></span><br></pre></td></tr></table></figure>
+<p>  links:</p>
+<ol>
+<li><a href="https://facebook.github.io/watchman/docs/install.html">watchman</a></li>
+<li><a href="http://flowtype.org/">flow</a></li>
+<li><a href="https://facebook.github.io/react-native/docs/">react-native docs</a></li>
+</ol>]]>
+    
     </summary>
     
       <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
@@ -182,7 +205,7 @@
     <link href="http://kumalee.github.io/2015/07/18/Algorithm-in-Javascript/"/>
     <id>http://kumalee.github.io/2015/07/18/Algorithm-in-Javascript/</id>
     <published>2015-07-18T13:33:53.000Z</published>
-    <updated>2015-07-18T14:25:18.000Z</updated>
+    <updated>2015-07-21T04:37:03.000Z</updated>
     <content type="html"><![CDATA[<p>Popular sorting algorithms 流行的排序算法</p>
 <ol>
 <li>Simple sorts 简单排序<ol>
@@ -210,6 +233,7 @@
 </li>
 </ol>
 <p><a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external">Sort Animation in Javascript by NoraHiko</a></p>
+<a id="more"></a>
 <h2 id="Quick_Sort_(sometimes_called_partition-exchange_sort)">Quick Sort (sometimes called partition-exchange sort)</h2><p>by Charles Antony Richard Hoare (commonly known as Tony Hoare or C. A. R. Hoare)（1934—）developed in 1959/1960.<br>ACM Turing Award (1980).</p>
 <ol>
 <li>Pick an element, called a pivot, from the array.<br>选择一个基准</li>
@@ -226,7 +250,28 @@
 <li>Insertion sort 插入排序法</li>
 <li>Selection sort 选择排序法</li>
 </ol>
-<]]>
+</li>
+<li>Efficient sorts 效率排序<ol>
+<li>Merge sort 归并排序法</li>
+<li>Heap sort 堆排序法</li>
+<li>Quick sort 快速排序法</li>
+</ol>
+</li>
+<li>Bubble sort and variants 冒泡和变量排序<ol>
+<li>Bubble sort 冒泡排序法</li>
+<li>Shell sort 希尔排序法</li>
+<li>Comb sort 梳子排序法</li>
+</ol>
+</li>
+<li>Distribution sort 分布排序<ol>
+<li>Counting sort 计数排序法</li>
+<li>Bucket sort 桶排序法</li>
+<li>Radix sort 基数排序法</li>
+</ol>
+</li>
+</ol>
+<p><a href="http://jsdo.it/norahiko/oxIy/fullscreen">Sort Animation in Javascript by NoraHiko</a></p>]]>
+    
     </summary>
     
       <category term="algorithm" scheme="http://kumalee.github.io/tags/algorithm/"/>
@@ -291,12 +336,13 @@
     <link href="http://kumalee.github.io/2015/07/18/CSS-Animation/"/>
     <id>http://kumalee.github.io/2015/07/18/CSS-Animation/</id>
     <published>2015-07-18T06:41:38.000Z</published>
-    <updated>2015-07-18T13:25:46.000Z</updated>
+    <updated>2015-07-21T04:39:14.000Z</updated>
     <content type="html"><![CDATA[<p>This article is the collection about animation for html.<br>关于 html 动画的一切在这里集结</p>
 <p>浏览器处理的过程:</p>
 <blockquote>
 <p><strong>Recalculate Style</strong> -&gt; <strong>Layout</strong> -&gt; <strong>Paint Setup and Paint</strong> -&gt; <strong>Composite Layers</strong><br>计算元素的样式（重新计算样式）-&gt; 生成每个元素的几何形状和位置（布局）-&gt; 绘制图层中的每个像素（初始化绘图并且进行绘图）-&gt; 并且将图层绘制到屏幕上（图层的合成）。</p>
 </blockquote>
+<a id="more"></a>
 <p>通过DevTools从文档对象模型到像素级别的观察:</p>
 <blockquote>
 <p>The higher up you start on the timeline waterfall the more work the browser has to do to get pixels on to the screen. Chrome DevTools 框架模式。 瀑布流越高，说明浏览器做的越多。</p>
@@ -735,7 +781,9 @@
     <![CDATA[<p>This article is the collection about animation for html.<br>关于 html 动画的一切在这里集结</p>
 <p>浏览器处理的过程:</p>
 <blockquote>
-<p><strong>Recalculate S]]>
+<p><strong>Recalculate Style</strong> -&gt; <strong>Layout</strong> -&gt; <strong>Paint Setup and Paint</strong> -&gt; <strong>Composite Layers</strong><br>计算元素的样式（重新计算样式）-&gt; 生成每个元素的几何形状和位置（布局）-&gt; 绘制图层中的每个像素（初始化绘图并且进行绘图）-&gt; 并且将图层绘制到屏幕上（图层的合成）。</p>
+</blockquote>]]>
+    
     </summary>
     
       <category term="css" scheme="http://kumalee.github.io/tags/css/"/>
