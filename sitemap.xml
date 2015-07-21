@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://kumalee.github.io/2015/07/21/React-Native-App-Guide-3/</loc>
+    <lastmod>2015-07-21T14:40:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/</loc>
+    <lastmod>2015-07-21T14:14:24.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kumalee.github.io/2015/07/18/CSS-Animation/</loc>
     <lastmod>2015-07-21T04:39:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kumalee.github.io/2015/07/18/Gossip-Renaissance/</loc>
+    <lastmod>2015-07-21T04:38:37.000Z</lastmod>
   </url>
   
   <url>
@@ -19,16 +34,6 @@
   <url>
     <loc>http://kumalee.github.io/2015/07/18/Algorithm-in-Javascript/</loc>
     <lastmod>2015-07-21T04:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kumalee.github.io/2015/07/20/Config-Files-in-Web-Develop/</loc>
-    <lastmod>2015-07-21T04:36:52.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kumalee.github.io/2015/07/18/Gossip-Renaissance/</loc>
-    <lastmod>2015-07-18T17:28:32.000Z</lastmod>
   </url>
   
   <url>
