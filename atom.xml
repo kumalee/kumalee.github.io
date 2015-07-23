@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Life is short, be positive.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://kumalee.github.io//"/>
-  <updated>2015-07-21T14:40:14.000Z</updated>
+  <updated>2015-07-23T05:23:21.000Z</updated>
   <id>http://kumalee.github.io//</id>
   
   <author>
@@ -14,6 +14,81 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[React Native App Guide 4]]></title>
+    <link href="http://kumalee.github.io/2015/07/23/React-Native-App-Guide-4/"/>
+    <id>http://kumalee.github.io/2015/07/23/React-Native-App-Guide-4/</id>
+    <published>2015-07-23T05:18:01.000Z</published>
+    <updated>2015-07-23T05:23:21.000Z</updated>
+    <content type="html"><![CDATA[<p>Today let’s make a list view to video-list</p>
+<h1 id="Step_1">Step 1</h1><blockquote>
+<p>Open the <strong>views/video-lsit.js</strong> file and add the content blow</p>
+</blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react-native'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> &#123;</span><br><span class="line">  Image,</span><br><span class="line">  StyleSheet,</span><br><span class="line">  Text,</span><br><span class="line">  View,</span><br><span class="line">  Component,</span><br><span class="line">  ListView,</span><br><span class="line">  TouchableHighlight</span><br><span class="line">&#125; = React;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> styles = StyleSheet.create(&#123;</span><br><span class="line">  container: &#123;</span><br><span class="line">    flex: <span class="number">1</span>,</span><br><span class="line">    flexDirection: <span class="string">'column'</span>,</span><br><span class="line">    justifyContent: <span class="string">'center'</span>,</span><br><span class="line">    alignItems: <span class="string">'center'</span>,</span><br><span class="line">    backgroundColor: <span class="string">'#F5FCFF'</span>,</span><br><span class="line">    padding: <span class="number">10</span></span><br><span class="line">  &#125;,</span><br><span class="line">  thumbnail: &#123;</span><br><span class="line">    width: <span class="number">320</span>,</span><br><span class="line">    height: <span class="number">180</span></span><br><span class="line">  &#125;,</span><br><span class="line">  bottomContainer: &#123;</span><br><span class="line">    flex: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tags: &#123;</span><br><span class="line">    fontSize: <span class="number">14</span>,</span><br><span class="line">    paddingTop: <span class="number">10</span></span><br><span class="line">  &#125;,</span><br><span class="line">  separator: &#123;</span><br><span class="line">    height: <span class="number">1</span>,</span><br><span class="line">    backgroundColor: <span class="string">'#dddddd'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> FAKE_VIDEO_DATA = [</span><br><span class="line">  &#123;volumeInfo: &#123;tags: <span class="string">'营销'</span>, imageLinks: &#123;thumbnail: <span class="string">'http://ac-n0p3k1ve.clouddn.com/5747b421ffd686ca.jpeg'</span>&#125;&#125;&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">VideoList</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state = &#123;</span><br><span class="line">      dataSource: <span class="keyword">new</span> ListView.DataSource(&#123;</span><br><span class="line">        rowHasChanged: (row1, row2) =&gt; row1 !== row2</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  componentDidMount() &#123;</span><br><span class="line">    <span class="keyword">var</span> videos = FAKE_VIDEO_DATA;</span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">      dataSource: <span class="keyword">this</span>.state.dataSource.cloneWithRows(videos)</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  renderVideo(video) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">TouchableHighlight</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">View</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">View</span> <span class="attribute">style</span>=<span class="value">&#123;styles.container&#125;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">Image</span></span><br><span class="line">              <span class="attribute">source</span>=<span class="value">&#123;&#123;uri:</span> <span class="attribute">video.volumeInfo.imageLinks.thumbnail</span>&#125;&#125;</span><br><span class="line">              <span class="attribute">style</span>=<span class="value">&#123;styles.thumbnail&#125;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">View</span> <span class="attribute">style</span>=<span class="value">&#123;styles.bottomContainer&#125;</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">Text</span> <span class="attribute">style</span>=<span class="value">&#123;styles.tags&#125;</span>&gt;</span>&#123;video.volumeInfo.tags&#125;<span class="tag">&lt;/<span class="title">Text</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">View</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">View</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">View</span> <span class="attribute">style</span>=<span class="value">&#123;styles.separator&#125;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">View</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">TouchableHighlight</span>&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="xml"><span class="tag">&lt;<span class="title">ListView</span></span><br><span class="line">        <span class="attribute">dataSource</span>=<span class="value">&#123;this.state.dataSource&#125;</span></span><br><span class="line">        <span class="attribute">renderRow</span>=<span class="value">&#123;this.renderVideo.bind(this)&#125;</span></span><br><span class="line">        <span class="attribute">style</span>=<span class="value">&#123;styles.listView&#125;</span></span><br><span class="line">        /&gt;</span></span><br><span class="line">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = VideoList;</span><br></pre></td></tr></table></figure>
+<h1 id="Step_2">Step 2</h1><blockquote>
+<p>OK! Now hit <strong>cmd+R</strong> in your iOS simulator to reload the app and see your change!</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Today let’s make a list view to video-list</p>
+<h1 id="Step_1">Step 1</h1><blockquote>
+<p>Open the <strong>views/video-lsit.js</strong> f]]>
+    </summary>
+    
+      <category term="develop" scheme="http://kumalee.github.io/tags/develop/"/>
+    
+      <category term="react" scheme="http://kumalee.github.io/tags/react/"/>
+    
+      <category term="reactNative" scheme="http://kumalee.github.io/tags/reactNative/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Korean Study]]></title>
+    <link href="http://kumalee.github.io/2015/07/22/Korean-Study/"/>
+    <id>http://kumalee.github.io/2015/07/22/Korean-Study/</id>
+    <published>2015-07-22T03:56:39.000Z</published>
+    <updated>2015-07-22T04:12:08.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Pronounce">Pronounce</h1><p>元音</p>
+<ol>
+<li>ㅏ(a)</li>
+<li>ㅣ(yi)</li>
+<li>ㅗ(wuo)</li>
+<li>ㅜ(wu)</li>
+<li>ㅔ(e)</li>
+</ol>
+<p>辅音</p>
+<ol>
+<li>ㄷ(d)</li>
+<li>ㅂ(b)</li>
+<li>ㅌ(t)</li>
+<li>ㅅ(c)</li>
+<li>ㅊ(z)</li>
+<li>ㄴ(n)</li>
+<li>ㅁ(m)</li>
+<li>ㅍ(p)</li>
+<li>ㄹ(l)</li>
+</ol>
+<h1 id="Word_List">Word List</h1><p>1.</p>
+<h1 id="Common_Patterns">Common Patterns</h1><p>1.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Pronounce">Pronounce</h1><p>元音</p>
+<ol>
+<li>ㅏ(a)</li>
+<li>ㅣ(yi)</li>
+<li>ㅗ(wuo)</li>
+<li>ㅜ(wu)</li>
+<li>ㅔ(e)</li>
+</ol>
+<p>辅音</p>
+<o]]>
+    </summary>
+    
+      <category term="korean" scheme="http://kumalee.github.io/tags/korean/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[React Native App Guide 3]]></title>
